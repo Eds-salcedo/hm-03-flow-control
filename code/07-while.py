@@ -25,3 +25,14 @@ while command.strip().lower() != "exit":
     # Then we indicate to open an input option for the use to introduce a value to the code, which will change the value of the COMMAND variable and will be evaluated in a new loop
     command = input("$")
 print(command)  # Here we indicate that, if in any loop the variable COMMAND is different from "exit" or "salir", the value will be printed. If it is equal to one of those, the introduced COMMAND value will no longer be printed
+
+# 3) Exercise 3: Always remember that a WHILE infinite loop might generate problems consuming too much memory from your PC, causing your Operative System to terminate the WHILE operation of you text editor.
+# This is why you should always add an exit condition when using WHILE loops
+
+while True:
+    comando = input("$ ")
+    print(comando)
+    if comando.lower() == "salir":
+        break
+print("YOU'RE OUT")
+# The BREAK condition shoul be ideally used as an ending to a conditional. This will stop the loop in general
