@@ -43,3 +43,27 @@ for number in range(50):
         break  # If you dont add a break here, the "ELSE" evaluation will keep being executed IN PARALELL along with every single loop of the original instruction and not at the end as a final command in case last resort.
 else:
     print(f"Value {search} not found!")
+
+
+# THERE ARE SEVERAL ITERABLE ITEMS ON PYTHON (LISTS, TUPLES, DICTIONARIES, ETC)
+# AMONG THOSE, WE CAN INCLUDE STRINGS (TEXT CHAINS)
+
+# Example #1:
+for char in "Ultimate python":
+    print(char)
+print("DONE")
+
+# Example #2:
+security_code = "AzDxYssMLOPSrrjkgls"
+
+revision_A = "ÑÑÑ"
+revision_O = "000"
+
+new_code = security_code
+for letter in security_code:
+    if letter == "A":
+        new_code = new_code.replace("A", revision_A)
+    if letter == "O":
+        new_code = new_code.replace("O", revision_O)
+
+print(new_code)
