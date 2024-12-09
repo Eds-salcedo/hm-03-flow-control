@@ -40,6 +40,6 @@ for number in range(50):
     print(number)
     if number == search:
         print("found:", search)
-        break  # If you dont add a break here, the "ELSE" evaluation will keep being executed for every single loop and not at the end as a final command in case last resort.
+        break  # If you dont add a break here, the "ELSE" evaluation will keep being executed IN PARALELL along with every single loop of the original instruction and not at the end as a final command in case last resort.
 else:
     print(f"Value {search} not found!")
